@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive NFT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive NFT</h1>
+        <div class="image-controls">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="takePhotoBtn">Take Photo</button>
+        </div>
+        <canvas id="canvas" width="512" height="512"></canvas>
+        <div class="buttons">
+            <button id="saveImageBtn">Save Image</button>
+        </div>
+        <p id="status"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
