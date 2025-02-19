@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the whole page */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input and buttons container */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Button styles */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button,
+.buttons input {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Canvas styling */
+canvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Style for the lock expression button */
+#lockExpressionBtn {
+    background-color: #f1c40f;
+}
+
+#lockExpressionBtn:hover {
+    background-color: #e67e22;
+}
+
+/* Style for the owner-only mode button */
+#ownerOnlyToggleBtn {
+    background-color: #2ecc71;
+}
+
+#ownerOnlyToggleBtn:hover {
+    background-color: #27ae60;
+}
+
+/* Disable buttons when expression is locked */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
