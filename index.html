@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Face Expression Modifications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>NFT Face Expression Modifications</h1>
+
+        <!-- Token ID input -->
+        <div class="input-group">
+            <label for="tokenId">Enter Token ID (1-1000):</label>
+            <input type="number" id="tokenId" min="1" max="1000" placeholder="Token ID">
+            <button id="fetchNFT">Load NFT</button>
+        </div>
+
+        <!-- Canvas to show the original image -->
+        <canvas id="originalCanvas" width="400" height="400"></canvas>
+
+        <!-- Buttons to interact with the image -->
+        <div class="buttons">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="takePhotoBtn">Take Photo</button>
+            <button id="lockExpressionBtn">Lock Expression</button>
+            <button id="ownerOnlyToggleBtn">Enable Owner Only Mode</button>
+            <button id="saveImageBtn">Save & Upload</button>
+        </div>
+
+        <!-- Canvas to show the modified image -->
+        <canvas id="modifiedCanvas" width="400" height="400"></canvas>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
